@@ -34,6 +34,7 @@
 		464118731BA56BDC00F8D81D /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118721BA56BDC00F8D81D /* ParseClient.swift */; };
 		464118751BA56F0C00F8D81D /* YakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118741BA56F0C00F8D81D /* YakTableViewCell.swift */; };
 		464118771BA56FEC00F8D81D /* Yak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118761BA56FEC00F8D81D /* Yak.swift */; };
+		464118791BA578B300F8D81D /* NewYakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118781BA578B300F8D81D /* NewYakViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		464118721BA56BDC00F8D81D /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
 		464118741BA56F0C00F8D81D /* YakTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YakTableViewCell.swift; sourceTree = "<group>"; };
 		464118761BA56FEC00F8D81D /* Yak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yak.swift; sourceTree = "<group>"; };
+		464118781BA578B300F8D81D /* NewYakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYakViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				464118761BA56FEC00F8D81D /* Yak.swift */,
 				464118741BA56F0C00F8D81D /* YakTableViewCell.swift */,
 				464118721BA56BDC00F8D81D /* ParseClient.swift */,
+				464118781BA578B300F8D81D /* NewYakViewController.swift */,
 				4641183A1BA569B800F8D81D /* ViewController.swift */,
 				4641183C1BA569B800F8D81D /* Main.storyboard */,
 				4641183F1BA569B800F8D81D /* Assets.xcassets */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4641183B1BA569B800F8D81D /* ViewController.swift in Sources */,
+				464118791BA578B300F8D81D /* NewYakViewController.swift in Sources */,
 				464118771BA56FEC00F8D81D /* Yak.swift in Sources */,
 				464118391BA569B800F8D81D /* AppDelegate.swift in Sources */,
 				464118731BA56BDC00F8D81D /* ParseClient.swift in Sources */,
