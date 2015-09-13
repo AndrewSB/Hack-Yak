@@ -28,6 +28,12 @@
 		464118671BA56A8500F8D81D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464118601BA56A8500F8D81D /* SystemConfiguration.framework */; };
 		464118691BA56AB200F8D81D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 464118681BA56AB200F8D81D /* libz.tbd */; };
 		4641186B1BA56ABE00F8D81D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641186A1BA56ABE00F8D81D /* libsqlite3.tbd */; };
+		4641186D1BA56B4700F8D81D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641186C1BA56B4700F8D81D /* Accounts.framework */; };
+		4641186F1BA56B4F00F8D81D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641186E1BA56B4F00F8D81D /* Social.framework */; };
+		464118711BA56BA300F8D81D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118701BA56BA300F8D81D /* LocationManager.swift */; };
+		464118731BA56BDC00F8D81D /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118721BA56BDC00F8D81D /* ParseClient.swift */; };
+		464118751BA56F0C00F8D81D /* YakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118741BA56F0C00F8D81D /* YakTableViewCell.swift */; };
+		464118771BA56FEC00F8D81D /* Yak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118761BA56FEC00F8D81D /* Yak.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		464118601BA56A8500F8D81D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		464118681BA56AB200F8D81D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4641186A1BA56ABE00F8D81D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4641186C1BA56B4700F8D81D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4641186E1BA56B4F00F8D81D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		464118701BA56BA300F8D81D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		464118721BA56BDC00F8D81D /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		464118741BA56F0C00F8D81D /* YakTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YakTableViewCell.swift; sourceTree = "<group>"; };
+		464118761BA56FEC00F8D81D /* Yak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yak.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4641186F1BA56B4F00F8D81D /* Social.framework in Frameworks */,
+				4641186D1BA56B4700F8D81D /* Accounts.framework in Frameworks */,
 				464118641BA56A8500F8D81D /* CoreLocation.framework in Frameworks */,
 				4641186B1BA56ABE00F8D81D /* libsqlite3.tbd in Frameworks */,
 				464118691BA56AB200F8D81D /* libz.tbd in Frameworks */,
@@ -104,6 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				464118381BA569B800F8D81D /* AppDelegate.swift */,
+				464118701BA56BA300F8D81D /* LocationManager.swift */,
+				464118761BA56FEC00F8D81D /* Yak.swift */,
+				464118741BA56F0C00F8D81D /* YakTableViewCell.swift */,
+				464118721BA56BDC00F8D81D /* ParseClient.swift */,
 				4641183A1BA569B800F8D81D /* ViewController.swift */,
 				4641183C1BA569B800F8D81D /* Main.storyboard */,
 				4641183F1BA569B800F8D81D /* Assets.xcassets */,
@@ -130,6 +148,8 @@
 		464118591BA56A4500F8D81D /* Framewors */ = {
 			isa = PBXGroup;
 			children = (
+				4641186E1BA56B4F00F8D81D /* Social.framework */,
+				4641186C1BA56B4700F8D81D /* Accounts.framework */,
 				4641186A1BA56ABE00F8D81D /* libsqlite3.tbd */,
 				464118681BA56AB200F8D81D /* libz.tbd */,
 				4641185A1BA56A8500F8D81D /* AudioToolbox.framework */,
@@ -216,7 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4641183B1BA569B800F8D81D /* ViewController.swift in Sources */,
+				464118771BA56FEC00F8D81D /* Yak.swift in Sources */,
 				464118391BA569B800F8D81D /* AppDelegate.swift in Sources */,
+				464118731BA56BDC00F8D81D /* ParseClient.swift in Sources */,
+				464118711BA56BA300F8D81D /* LocationManager.swift in Sources */,
+				464118751BA56F0C00F8D81D /* YakTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

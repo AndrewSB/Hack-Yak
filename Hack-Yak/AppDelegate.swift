@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
         
+        Parse.setApplicationId("klrbCcmo5svPjlXNX6IKzKLanbzodAC1A4bdMzX3",
+            clientKey: "mjV9q1BmCvwOvxAfz0PimZMyZhU5IDX5eR2VOTGu")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+    
         
         return true
     }
