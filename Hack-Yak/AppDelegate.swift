@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import Bolts
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,12 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        Parse.setApplicationId("klrbCcmo5svPjlXNX6IKzKLanbzodAC1A4bdMzX3",
-            clientKey: "mjV9q1BmCvwOvxAfz0PimZMyZhU5IDX5eR2VOTGu")
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("VP1qFOILjW0ODGPNEnyuyAoAvZthCldx6PeDEti0",
+            clientKey: "P6XqNpSUo7O9Hz9mouaUlKUC6rkL0yRL83hsejs9")
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
     
+        LocationManager.sharedInstance.requestWhenInUseAuthorization()
+        
+        ParseClient.sharedInstance.createYak("Test")
         
         return true
     }

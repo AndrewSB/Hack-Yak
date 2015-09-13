@@ -11,14 +11,17 @@ import CoreLocation
 
 
 class LocationManager: CLLocationManager {
+    
     static let sharedInstance = LocationManager()
     
-    static var currentLocation: CLLocation!
+    var currentLocation: CLLocation!
     
     override init() {
+        
         super.init()
+        
         self.delegate = self
-        self.requestAlwaysAuthorization()
+        self.requestWhenInUseAuthorization()
         
         requestLocation()
     }
@@ -27,7 +30,13 @@ class LocationManager: CLLocationManager {
 }
 
 extension LocationManager: CLLocationManagerDelegate {
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        LocationManager.currentLocation = locations.last!
+        self.currentLocation = locations.last!
     }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        self.stopUpdatingLocation()
+    }
+    
 }

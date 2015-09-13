@@ -12,21 +12,26 @@ import Parse
 import Bolts
 
 enum ParseClass: String {
-    case Yaks = "Yaks"
+    case Yaks = "yaks"
 }
 
 class ParseClient {
+    
     static let sharedInstance = ParseClient()
     
     var currentLocation: CLLocation!
     
     func createYak(yakContent: String) {
-        let yakParseObject = PFObject(className: ParseClass.Yaks.rawValue)
         
-        yakParseObject["message"] = yakContent
-        yakParseObject["location"] = LocationManager.currentLocation
-        yakParseObject["upvotes"] = 0
+        let yakParseObject = PFObject(className: "yaks")
+        
+        let geoPoint = PFGeoPoint(location: LocationManager.sharedInstance.currentLocation ?? CLLocation())
+        
+        yakParseObject.setObject(yakContent, forKey: "message")
+        yakParseObject.setObject(0, forKey: "upvotes")
+        yakParseObject.setObject(geoPoint, forKey: "location")
         
         yakParseObject.saveInBackground()
+
     }
 }
