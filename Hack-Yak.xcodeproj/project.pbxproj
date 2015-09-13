@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		464118391BA569B800F8D81D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464118381BA569B800F8D81D /* AppDelegate.swift */; };
+		4641183B1BA569B800F8D81D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641183A1BA569B800F8D81D /* ViewController.swift */; };
+		4641183E1BA569B800F8D81D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4641183C1BA569B800F8D81D /* Main.storyboard */; };
+		464118401BA569B800F8D81D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4641183F1BA569B800F8D81D /* Assets.xcassets */; };
+		464118431BA569B800F8D81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464118411BA569B800F8D81D /* LaunchScreen.storyboard */; };
+		464118521BA56A3C00F8D81D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641184B1BA56A3B00F8D81D /* Bolts.framework */; };
+		464118531BA56A3C00F8D81D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641184C1BA56A3B00F8D81D /* Parse.framework */; };
+		464118541BA56A3C00F8D81D /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641184D1BA56A3B00F8D81D /* ParseCrashReporting.framework */; };
+		464118551BA56A3C00F8D81D /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641184E1BA56A3B00F8D81D /* ParseFacebookUtils.framework */; };
+		464118561BA56A3C00F8D81D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641184F1BA56A3B00F8D81D /* ParseFacebookUtilsV4.framework */; };
+		464118571BA56A3C00F8D81D /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464118501BA56A3B00F8D81D /* ParseTwitterUtils.framework */; };
+		464118581BA56A3C00F8D81D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464118511BA56A3B00F8D81D /* ParseUI.framework */; };
+		464118611BA56A8500F8D81D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641185A1BA56A8500F8D81D /* AudioToolbox.framework */; };
+		464118621BA56A8500F8D81D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641185B1BA56A8500F8D81D /* CFNetwork.framework */; };
+		464118631BA56A8500F8D81D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641185C1BA56A8500F8D81D /* CoreGraphics.framework */; };
+		464118641BA56A8500F8D81D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641185D1BA56A8500F8D81D /* CoreLocation.framework */; };
+		464118651BA56A8500F8D81D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641185E1BA56A8500F8D81D /* QuartzCore.framework */; };
+		464118661BA56A8500F8D81D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641185F1BA56A8500F8D81D /* Security.framework */; };
+		464118671BA56A8500F8D81D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464118601BA56A8500F8D81D /* SystemConfiguration.framework */; };
+		464118691BA56AB200F8D81D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 464118681BA56AB200F8D81D /* libz.tbd */; };
+		4641186B1BA56ABE00F8D81D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4641186A1BA56ABE00F8D81D /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		464118351BA569B800F8D81D /* Hack-Yak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack-Yak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		464118381BA569B800F8D81D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4641183A1BA569B800F8D81D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4641183D1BA569B800F8D81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4641183F1BA569B800F8D81D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		464118421BA569B800F8D81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		464118441BA569B800F8D81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4641184B1BA56A3B00F8D81D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4641184C1BA56A3B00F8D81D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4641184D1BA56A3B00F8D81D /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		4641184E1BA56A3B00F8D81D /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		4641184F1BA56A3B00F8D81D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		464118501BA56A3B00F8D81D /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		464118511BA56A3B00F8D81D /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		4641185A1BA56A8500F8D81D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4641185B1BA56A8500F8D81D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4641185C1BA56A8500F8D81D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4641185D1BA56A8500F8D81D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4641185E1BA56A8500F8D81D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4641185F1BA56A8500F8D81D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		464118601BA56A8500F8D81D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		464118681BA56AB200F8D81D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4641186A1BA56ABE00F8D81D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		464118321BA569B800F8D81D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464118641BA56A8500F8D81D /* CoreLocation.framework in Frameworks */,
+				4641186B1BA56ABE00F8D81D /* libsqlite3.tbd in Frameworks */,
+				464118691BA56AB200F8D81D /* libz.tbd in Frameworks */,
+				464118611BA56A8500F8D81D /* AudioToolbox.framework in Frameworks */,
+				464118621BA56A8500F8D81D /* CFNetwork.framework in Frameworks */,
+				464118631BA56A8500F8D81D /* CoreGraphics.framework in Frameworks */,
+				464118651BA56A8500F8D81D /* QuartzCore.framework in Frameworks */,
+				464118661BA56A8500F8D81D /* Security.framework in Frameworks */,
+				464118671BA56A8500F8D81D /* SystemConfiguration.framework in Frameworks */,
+				464118531BA56A3C00F8D81D /* Parse.framework in Frameworks */,
+				464118541BA56A3C00F8D81D /* ParseCrashReporting.framework in Frameworks */,
+				464118581BA56A3C00F8D81D /* ParseUI.framework in Frameworks */,
+				464118551BA56A3C00F8D81D /* ParseFacebookUtils.framework in Frameworks */,
+				464118521BA56A3C00F8D81D /* Bolts.framework in Frameworks */,
+				464118571BA56A3C00F8D81D /* ParseTwitterUtils.framework in Frameworks */,
+				464118561BA56A3C00F8D81D /* ParseFacebookUtilsV4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4641182C1BA569B800F8D81D = {
+			isa = PBXGroup;
+			children = (
+				464118591BA56A4500F8D81D /* Framewors */,
+				464118371BA569B800F8D81D /* Hack-Yak */,
+				464118361BA569B800F8D81D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		464118361BA569B800F8D81D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				464118351BA569B800F8D81D /* Hack-Yak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		464118371BA569B800F8D81D /* Hack-Yak */ = {
+			isa = PBXGroup;
+			children = (
+				464118381BA569B800F8D81D /* AppDelegate.swift */,
+				4641183A1BA569B800F8D81D /* ViewController.swift */,
+				4641183C1BA569B800F8D81D /* Main.storyboard */,
+				4641183F1BA569B800F8D81D /* Assets.xcassets */,
+				464118411BA569B800F8D81D /* LaunchScreen.storyboard */,
+				464118441BA569B800F8D81D /* Info.plist */,
+			);
+			path = "Hack-Yak";
+			sourceTree = "<group>";
+		};
+		4641184A1BA56A3B00F8D81D /* parse-library-1.8.3 */ = {
+			isa = PBXGroup;
+			children = (
+				4641184B1BA56A3B00F8D81D /* Bolts.framework */,
+				4641184C1BA56A3B00F8D81D /* Parse.framework */,
+				4641184D1BA56A3B00F8D81D /* ParseCrashReporting.framework */,
+				4641184E1BA56A3B00F8D81D /* ParseFacebookUtils.framework */,
+				4641184F1BA56A3B00F8D81D /* ParseFacebookUtilsV4.framework */,
+				464118501BA56A3B00F8D81D /* ParseTwitterUtils.framework */,
+				464118511BA56A3B00F8D81D /* ParseUI.framework */,
+			);
+			path = "parse-library-1.8.3";
+			sourceTree = "<group>";
+		};
+		464118591BA56A4500F8D81D /* Framewors */ = {
+			isa = PBXGroup;
+			children = (
+				4641186A1BA56ABE00F8D81D /* libsqlite3.tbd */,
+				464118681BA56AB200F8D81D /* libz.tbd */,
+				4641185A1BA56A8500F8D81D /* AudioToolbox.framework */,
+				4641185B1BA56A8500F8D81D /* CFNetwork.framework */,
+				4641185C1BA56A8500F8D81D /* CoreGraphics.framework */,
+				4641185D1BA56A8500F8D81D /* CoreLocation.framework */,
+				4641185E1BA56A8500F8D81D /* QuartzCore.framework */,
+				4641185F1BA56A8500F8D81D /* Security.framework */,
+				464118601BA56A8500F8D81D /* SystemConfiguration.framework */,
+				4641184A1BA56A3B00F8D81D /* parse-library-1.8.3 */,
+			);
+			name = Framewors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		464118341BA569B800F8D81D /* Hack-Yak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464118471BA569B800F8D81D /* Build configuration list for PBXNativeTarget "Hack-Yak" */;
+			buildPhases = (
+				464118311BA569B800F8D81D /* Sources */,
+				464118321BA569B800F8D81D /* Frameworks */,
+				464118331BA569B800F8D81D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hack-Yak";
+			productName = "Hack-Yak";
+			productReference = 464118351BA569B800F8D81D /* Hack-Yak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4641182D1BA569B800F8D81D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Andrew Breckenridge";
+				TargetAttributes = {
+					464118341BA569B800F8D81D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3JD8WKWUX5;
+					};
+				};
+			};
+			buildConfigurationList = 464118301BA569B800F8D81D /* Build configuration list for PBXProject "Hack-Yak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4641182C1BA569B800F8D81D;
+			productRefGroup = 464118361BA569B800F8D81D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				464118341BA569B800F8D81D /* Hack-Yak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		464118331BA569B800F8D81D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464118431BA569B800F8D81D /* LaunchScreen.storyboard in Resources */,
+				464118401BA569B800F8D81D /* Assets.xcassets in Resources */,
+				4641183E1BA569B800F8D81D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		464118311BA569B800F8D81D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4641183B1BA569B800F8D81D /* ViewController.swift in Sources */,
+				464118391BA569B800F8D81D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4641183C1BA569B800F8D81D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4641183D1BA569B800F8D81D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		464118411BA569B800F8D81D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				464118421BA569B800F8D81D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		464118451BA569B800F8D81D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		464118461BA569B800F8D81D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		464118481BA569B800F8D81D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.8.3",
+				);
+				INFOPLIST_FILE = "Hack-Yak/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.Hack-Yak";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		464118491BA569B800F8D81D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.8.3",
+				);
+				INFOPLIST_FILE = "Hack-Yak/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.Hack-Yak";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		464118301BA569B800F8D81D /* Build configuration list for PBXProject "Hack-Yak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464118451BA569B800F8D81D /* Debug */,
+				464118461BA569B800F8D81D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		464118471BA569B800F8D81D /* Build configuration list for PBXNativeTarget "Hack-Yak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464118481BA569B800F8D81D /* Debug */,
+				464118491BA569B800F8D81D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4641182D1BA569B800F8D81D /* Project object */;
+}
