@@ -39,22 +39,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F9z-7h-l8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EWb-N5-Pfn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="F9z-7h-l8O" secondAttribute="trailingMargin" id="NeO-hm-Hlb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F9z-7h-l8O" secondAttribute="bottom" id="Rii-xo-4k5"/>
                             <constraint firstAttribute="trailing" secondItem="F9z-7h-l8O" secondAttribute="trailing" id="X3R-LM-f8x"/>
                             <constraint firstItem="F9z-7h-l8O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eKk-DX-MIm"/>
-                            <constraint firstItem="F9z-7h-l8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gRb-od-oM7"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="NeO-hm-Hlb"/>
-                                <exclude reference="gRb-od-oM7"/>
-                            </mask>
-                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Hack Yak" id="vLg-tT-Ti4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Ta-hW-bWF"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Ta-hW-bWF">
+                            <connections>
+                                <segue destination="9A1-qc-cAe" kind="presentation" id="lXf-qa-kYx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="F9z-7h-l8O" id="VSD-xc-j6g"/>
@@ -63,6 +59,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vLC-Tw-Zrn">
+            <objects>
+                <viewController id="aWd-w4-jfR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90F-sI-3g4"/>
+                        <viewControllerLayoutGuide type="bottom" id="VbC-dg-tYo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vfX-BK-Itk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="place" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-Xs-afY">
+                                <rect key="frame" x="163" y="124" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="C2m-x1-fnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yCb-Xs-afY" secondAttribute="trailing" constant="177" id="bTD-8n-zKa"/>
+                            <constraint firstItem="yCb-Xs-afY" firstAttribute="leading" secondItem="vfX-BK-Itk" secondAttribute="leadingMargin" constant="143" id="gJx-DN-dId"/>
+                            <constraint firstItem="yCb-Xs-afY" firstAttribute="top" secondItem="90F-sI-3g4" secondAttribute="bottom" constant="60" id="o2K-B0-mIb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xPU-pK-r9Z">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="Nmj-o5-MEz"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="Wfb-ef-TRb"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mex-sL-vDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869" y="1032"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sK4-1x-fPz">
@@ -81,7 +116,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S86-ba-h6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="427"/>
+            <point key="canvasLocation" x="343" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BWv-rI-dqB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9A1-qc-cAe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="POf-Ns-akP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aWd-w4-jfR" kind="relationship" relationship="rootViewController" id="zbj-DJ-jSc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bm5-KK-5gO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1032"/>
         </scene>
     </scenes>
 </document>
